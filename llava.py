@@ -4,7 +4,6 @@ from vision_language_model import VisionLanguageModel
 import torch
 
 
-# Example subclass that implements the abstract method
 class Llava(VisionLanguageModel):
 
     def __init__(self, image_folder: str = "images", questions_file_path: str = "questions.js", json_file_path: str = "image_data.js") -> None:

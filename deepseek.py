@@ -5,7 +5,6 @@ from deepseek_vl.deepseek_vl.models import VLChatProcessor, MultiModalityCausalL
 from vision_language_model import VisionLanguageModel
 
 
-# Example subclass that implements the abstract method
 class Deepseek(VisionLanguageModel):
 
     def __init__(self, image_folder: str = "images", questions_file_path: str = "questions.js", json_file_path: str = "image_data.js") -> None:

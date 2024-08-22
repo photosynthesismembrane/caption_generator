@@ -5,7 +5,6 @@ from accelerate import init_empty_weights, infer_auto_device_map, load_checkpoin
 from vision_language_model import VisionLanguageModel
 
 
-# Example subclass that implements the abstract method
 class Cogvlm(VisionLanguageModel):
 
     def __init__(self, image_folder: str = "images", questions_file_path: str = "questions.js", json_file_path: str = "image_data.js") -> None:
