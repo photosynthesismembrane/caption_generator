@@ -2,7 +2,7 @@
 
 This repository can be used to generate image captions using vision language models: Llava, Cogvlm and/or Deepseek.  
 
-###Install:
+### Install:
 ```
 git clone https://github.com/deepseek-ai/DeepSeek-VL.git && \
 mv DeepSeek-VL deepseek_vl && \
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 When generating captions with the Deepseek model, it requires to clone its github repository. For the models Llava and Cogvlm, they will be downloaded from Huggingface automatically when running the program as described below.  
 
-###Run:
+### Run:
 ```
 python answer_questions.py --image_folder="images" --questions_file_path="questions.js" --json_file_path="captions.js" --model="all"
 ```
