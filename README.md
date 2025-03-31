@@ -1,7 +1,8 @@
 # Caption Generator
 
 This repository can be used to generate image captions using vision language models: Llava, Cogvlm and/or Deepseek. 
-
+<br/>
+<br/>
 Install:
 ```
 git clone https://github.com/deepseek-ai/DeepSeek-VL.git && \
@@ -11,16 +12,17 @@ source venv/bin/activate && \
 pip install -r requirements.txt
 ```
 When generating captions with the Deepseek model, it requires to clone its github repository. For the models Llava and Cogvlm, they will be downloaded from Huggingface automatically when running the program as described below. 
-
+<br/>
+<br/>
 Run:
 ```
 python answer_questions.py --image_folder="images" --questions_file_path="questions.js" --json_file_path="captions.js" --model="all"
 ```
 
-Images:
+Images:<br/>
 The captions will be generated for all the images in a specified folder --image_folder="images".
 
-Questions:
+Questions:<br/>
 You can generate one or multiple captions per image, based on a set of questions. The questions must come in the following .js format, replacing <question_label_#> and <Question #> with your custom request:
 
 ```
@@ -33,5 +35,5 @@ const questions = [
 ];
 ```
 
-Models:
+Models:<br/>
 VLM's can be run seperately by setting --model to either "llava", "cogvlm" or "deepseek". When set to "all", each VLM is run sequentially, only one model is allocated on the gpu at the time. 
