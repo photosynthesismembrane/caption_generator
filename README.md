@@ -14,7 +14,7 @@ When generating captions with the Deepseek model, it requires to clone its githu
 
 ## Run:
 ```
-python answer_questions.py --image_folder="images" --questions_file_path="questions.js" --json_file_path="captions.js" --model="all"
+python answer_questions.py --image_folder="images" --questions_file_path="questions.js" --model="all" --json_file_path="captions.js"
 ```
 
 *Images:*  
@@ -35,3 +35,8 @@ const questions = [
 
 *Models:*  
 VLM's can be run seperately by setting --model to either "llava", "cogvlm" or "deepseek". When set to "all", each VLM is run sequentially, only one model is allocated on the gpu at the time. 
+
+*Captions:*  
+The resulting captions will be saved to the specified file --json_file_path="captions.js" in a json format.
+
+> The questions and captions are formatted in a JavaScript file in order for the results to be displayed easily on a website interface, which is implemented in the repository: [caption_interface](https://github.com/photosynthesismembrane/caption_interface)
