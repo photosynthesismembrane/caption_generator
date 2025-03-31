@@ -37,6 +37,6 @@ const questions = [
 VLM's can be run seperately by setting --model to either "llava", "cogvlm" or "deepseek". When set to "all", each VLM is run sequentially, only one model is allocated on the gpu at the time. 
 
 *Captions:*  
-The resulting captions will be saved to the specified file --json_file_path="captions.js" in a json format.
+The resulting captions will be saved to the specified file --json_file_path="captions.js" in a json format.  
 
 > The questions and captions are formatted in a JavaScript file in order for the results to be displayed easily on a website interface, which is implemented in the repository: [caption_interface](https://github.com/photosynthesismembrane/caption_interface)
